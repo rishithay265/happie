@@ -95,6 +95,7 @@ model Project {
   milestones       Milestone[]
   documents        Documents[]
   message          Message[]
+  donations        Donation[]
   admin            Admin?            @relation(fields: [adminId], references: [id], onDelete: SetNull, onUpdate: Cascade)
   category         Category?         @relation(fields: [categoryId], references: [id])
   categoryId       Int?
@@ -234,4 +235,18 @@ model Fund {
   amount    Float    @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model Donation {
+  id            Int      @id @default(autoincrement())
+  amount        Float
+  currency      String   @default("usd")
+  paymentProvider String
+  paymentId     String   @unique
+  projectId     Int
+  status        String   @default("escrow")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
 }
