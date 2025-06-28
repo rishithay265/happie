@@ -127,10 +127,13 @@ npx prisma generate && npx prisma migrate deploy && npx prisma db seed
 ---
 
 ## ✅ Future Roadmap
+- 🎖️ User badges and achievements
+- 🎯 Grant matching for projects
+- 📈 Built-in analytics tracking
 
 - 📊 Admin dashboard analytics
     
-- 📱 Mobile-first PWA support
+- 📱 Mobile companion via React Native or PWA (see `docs/mobile-companion.md`)
     
 - 📩 Email/SMS notifications for milestone approvals
     

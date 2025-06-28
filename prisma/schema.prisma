@@ -38,11 +38,13 @@ model User {
 
   projectMembers ProjectMember[]
 
-  createdAt        DateTime  @default(now())
-  updatedAt        DateTime  @updatedAt
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
   Project          Project[]
-  sentMessages     Message[] @relation("SentMessages")
-  receivedMessages Message[] @relation("ReceivedMessages")
+  sentMessages     Message[]        @relation("SentMessages")
+  receivedMessages Message[]        @relation("ReceivedMessages")
+  UserBadge        UserBadge[]
+  AnalyticsEvent   AnalyticsEvent[]
 }
 
 model Investor {
@@ -98,6 +100,7 @@ model Project {
   admin            Admin?            @relation(fields: [adminId], references: [id], onDelete: SetNull, onUpdate: Cascade)
   category         Category?         @relation(fields: [categoryId], references: [id])
   categoryId       Int?
+  GrantMatch       GrantMatch[]
 }
 
 model ProjectMember {
@@ -132,7 +135,7 @@ model Investment {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @default(now())
 
-  investor Investor  @relation(fields: [investorId], references: [id])
+  investor Investor @relation(fields: [investorId], references: [id])
 }
 
 model Milestone {
@@ -225,7 +228,7 @@ model Category {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  projects   Project[]
+  projects Project[]
 }
 
 model Fund {
@@ -234,4 +237,63 @@ model Fund {
   amount    Float    @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model Badge {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String?
+  icon        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userBadges UserBadge[]
+}
+
+model UserBadge {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  badgeId   Int
+  awardedAt DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge Badge @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, badgeId])
+}
+
+model Grant {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  provider    String?
+  amount      Float
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  matches GrantMatch[]
+}
+
+model GrantMatch {
+  id        Int      @id @default(autoincrement())
+  projectId Int
+  grantId   Int
+  status    String   @default("pending")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  grant   Grant   @relation(fields: [grantId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, grantId])
+}
+
+model AnalyticsEvent {
+  id        Int      @id @default(autoincrement())
+  userId    Int?
+  event     String
+  data      Json?
+  createdAt DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
 }
