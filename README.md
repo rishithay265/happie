@@ -1,7 +1,7 @@
 
-# 🚀 Fundit – Empowering Student Entrepreneurs Through Crowdfunding
+# 🚀 Happie – Your Mental Wellness Companion
 
-**Fundit** is a full-stack crowdfunding platform built to connect aspiring **student entrepreneurs** with **impact-driven investors**. It creates a secure, milestone-based funding environment where students can turn startup ideas into reality, and investors can support innovation while earning passive returns.
+**Happie** is a full-stack platform focused on mental wellness. It helps students connect with supportive resources and enables investors to fund well-being initiatives.
 
 ---
 
@@ -122,7 +122,7 @@ npx prisma generate && npx prisma migrate deploy && npx prisma db seed
 
 ## 🚀 Live Demo 
 
-🔗 **Live Site:** [Live](https://fundit.mutiurrahman.com/)  
+🔗 **Live Site:** [Live](https://happie.example.com/)
 🎥 **Detailed Video:** [YouTube](https://www.youtube.com/watch?v=AvoooD7cLzQ)
 ---
 

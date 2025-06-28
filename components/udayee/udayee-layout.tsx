@@ -222,7 +222,7 @@ export function UdayeeLayout({ children }: UdayeeLayoutProps) {
                   <div className="h-12 w-full flex items-center justify-center overflow-hidden">
                     <Image
                       src="/logo_light.png"
-                      alt="logo"
+                      alt="Happie logo"
                       height={32}
                       width={80}
                       style={{ objectFit: "contain" }}
@@ -293,7 +293,7 @@ export function UdayeeLayout({ children }: UdayeeLayoutProps) {
                   <div className="h-12 w-full flex items-center justify-center overflow-hidden">
                     <Image
                       src="/logo_light.png"
-                      alt="logo"
+                      alt="Happie logo"
                       height={32}
                       width={80}
                       style={{ objectFit: "contain" }}

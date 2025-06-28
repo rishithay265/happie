@@ -45,9 +45,9 @@ const slideInRight = {
 // Data Arrays and Objects
 const HERO_DATA = {
   badge: "Our Story",
-  title: "About FundIt",
+  title: "About Happie",
   description:
-    "FundIt bridges the gap between innovative student entrepreneurs and investors who believe in nurturing the next generation of changemakers.",
+    "Happie bridges the gap between innovative student entrepreneurs and investors who believe in nurturing the next generation of changemakers.",
 };
 
 const MISSION_VISION = [
@@ -61,7 +61,7 @@ const MISSION_VISION = [
     icon: Lightbulb,
     title: "Our Vision",
     description:
-      "We envision a future where student entrepreneurship is celebrated and supported, where innovative ideas from university campuses can easily find the backing they need to grow and make an impact. FundIt aims to be the bridge that connects promising student startups with investors who are looking to support the next generation of entrepreneurs.",
+      "We envision a future where student entrepreneurship is celebrated and supported, where innovative ideas from university campuses can easily find the backing they need to grow and make an impact. Happie aims to be the bridge that connects promising student startups with investors who are looking to support the next generation of entrepreneurs.",
   },
 ];
 
@@ -92,7 +92,7 @@ const HOW_IT_WORKS_STEPS = [
   {
     title: "Student Registration",
     description:
-      "Students register on FundIt and create profiles for their startup projects.",
+      "Students register on Happie and create profiles for their startup projects.",
   },
   {
     title: "Project Creation",
@@ -154,27 +154,27 @@ const TEAM_MEMBERS = [
 const TESTIMONIALS = [
   {
     quote:
-      "FundIt helped me turn my idea into a real business. The milestone-based funding approach gave me clear goals to work towards, and the investor I connected with has become an invaluable mentor.",
+      "Happie helped me turn my idea into a real business. The milestone-based funding approach gave me clear goals to work towards, and the investor I connected with has become an invaluable mentor.",
     name: "Tahmid Hassan",
     role: "Student Entrepreneur, BUET",
     project: "EcoSolutions",
   },
   {
     quote:
-      "As an investor, I appreciate the structured approach FundIt brings to student startups. The platform makes it easy to track progress and maintain clear communication with founders.",
+      "As an investor, I appreciate the structured approach Happie brings to student startups. The platform makes it easy to track progress and maintain clear communication with founders.",
     name: "Farzana Rahman",
     role: "Angel Investor",
   },
   {
     quote:
-      "Finding investors was my biggest challenge until I discovered FundIt. Now my healthcare app has the funding it needs to reach communities across Bangladesh.",
+      "Finding investors was my biggest challenge until I discovered Happie. Now my healthcare app has the funding it needs to reach communities across Bangladesh.",
     name: "Mahir Ahmed",
     role: "Student Entrepreneur, DMC",
     project: "MediConnect",
   },
   {
     quote:
-      "FundIt gives me access to creative, ambitious student founders who bring fresh perspectives to old problems. It's been rewarding both financially and personally.",
+      "Happie gives me access to creative, ambitious student founders who bring fresh perspectives to old problems. It's been rewarding both financially and personally.",
     name: "Nasreen Khan",
     role: "Tech Investor",
   },
@@ -183,7 +183,7 @@ const TESTIMONIALS = [
 const CTA_DATA = {
   title: "Ready to Join the Journey?",
   description:
-    "Whether you're a student entrepreneur with an innovative idea or an investor looking to support the next generation of startups, FundIt is the platform for you.",
+    "Whether you're a student entrepreneur with an innovative idea or an investor looking to support the next generation of startups, Happie is the platform for you.",
 };
 
 export {

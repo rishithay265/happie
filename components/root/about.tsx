@@ -316,7 +316,7 @@ export function AboutComponent() {
                 />
               </h2>
               <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-                FundIt operates on a simple but effective model that benefits
+                Happie operates on a simple but effective model that benefits
                 both student entrepreneurs and investors.
               </p>
             </motion.div>
@@ -413,7 +413,7 @@ export function AboutComponent() {
                 />
               </h2>
               <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-                The passionate individuals behind FundIt, dedicated to
+                The passionate individuals behind Happie, dedicated to
                 empowering student entrepreneurs.
               </p>
             </motion.div>
@@ -489,7 +489,7 @@ export function AboutComponent() {
               </h2>
               <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
                 Hear from students and investors who've found success through
-                FundIt.
+                Happie.
               </p>
             </motion.div>
 

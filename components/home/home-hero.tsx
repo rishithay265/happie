@@ -115,7 +115,7 @@ export function HomeHero() {
             className="text-lg lg:text-xl xl:text-xl 2xl:text-2xl text-muted-foreground"
             variants={fadeInLeft}
           >
-            FundIt empowers student entrepreneurs to showcase their ideas and
+            Happie empowers student entrepreneurs to showcase their ideas and
             connect with investors who believe in their vision.
           </motion.p>
 

@@ -38,7 +38,7 @@ export function HomeNavbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <Image src="/logo_light.png" alt="logo" height={135} width={135} />
+          <Image src="/logo_light.png" alt="Happie logo" height={135} width={135} />
         </Link>
 
         {/* Desktop Navigation */}
