@@ -32,15 +32,15 @@ const HERO_DATA = {
   badge: "Get in Touch",
   title: "We'd Love to Hear from You",
   description:
-    "Have questions about FundIt? Looking for support? Or just want to share your feedback? We're here to help.",
+    "Have questions about Happie? Looking for support? Or just want to share your feedback? We're here to help.",
 };
 
 const CONTACT_INFO = [
   {
     icon: Mail,
     title: "Email Us",
-    detail: "contact@FundIt.com",
-    href: "mailto:contact@FundIt.com",
+    detail: "contact@Happie.com",
+    href: "mailto:contact@Happie.com",
   },
   {
     icon: Phone,
@@ -70,14 +70,14 @@ const FAQ_DATA = [
       "Registration is simple! Click on the 'Sign Up' button, select 'Student', and follow the guided process to create your account and set up your startup profile.",
   },
   {
-    question: "What type of startups can join FundIt?",
+    question: "What type of startups can join Happie?",
     answer:
       "We welcome student-led startups from all industries and sectors. Whether you're working on tech, sustainability, healthcare, or creative projects, our platform is designed to support you.",
   },
   {
     question: "How are investments structured?",
     answer:
-      "FundIt uses a milestone-based investment approach. Funds are released as entrepreneurs complete predefined milestones, providing accountability for founders and security for investors.",
+      "Happie uses a milestone-based investment approach. Funds are released as entrepreneurs complete predefined milestones, providing accountability for founders and security for investors.",
   },
   {
     question: "Can I invest in multiple startups?",
@@ -114,7 +114,7 @@ const FORM_FIELDS = [
 ];
 
 const CTA_DATA = {
-  title: "Ready to Join the FundIt Community?",
+  title: "Ready to Join the Happie Community?",
   description:
     "Whether you're a student with a brilliant idea or an investor looking to support the next generation of innovators, we're here to connect you.",
   buttons: [
@@ -557,7 +557,7 @@ export function ContactComponent() {
                 />
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-                Find answers to common questions about FundIt
+                Find answers to common questions about Happie
               </p>
             </motion.div>
 

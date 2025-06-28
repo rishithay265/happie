@@ -219,7 +219,7 @@ export function UdayeeOnboarding() {
         JSON.stringify({
           email: formData.university_email,
           subject: 'UdayeeConnect Registration',
-          text: "<h2>Thank you for registering with FUndIt! Your account is being created and will be activated shortly. Please check your email for further instructions.</h2>",
+          text: "<h2>Thank you for registering with Happie! Your account is being created and will be activated shortly. Please check your email for further instructions.</h2>",
           // text: `<h2>This is your final notice. Your recent actions have been noted and are entirely unacceptable. If this behavior continues or is not immediately corrected, I will have no choice but to escalate the matter further—through all available channels.
           // Let this serve as a formal warning: I am prepared to take decisive action if this is not resolved at once.
           // You've been given more than enough time and opportunity to correct your course. This is your last chance to do so.</h2>`,
@@ -263,12 +263,12 @@ export function UdayeeOnboarding() {
             className="text-2xl font-bold"
             style={{ color: "var(--sidebar-primary)" }}
           >
-            {step === 1 && "Welcome to FundIt"}
+            {step === 1 && "Welcome to Happie"}
             {step === 2 && "Verify Your Identity"}
             {step === 3 && "Create Your Account"}
           </CardTitle>
           <CardDescription>
-            {step === 1 && "Let's get started with your FundIt journey"}
+            {step === 1 && "Let's get started with your Happie journey"}
             {step === 2 && "Upload your documents for verification"}
             {step === 3 && "Set up your account credentials"}
           </CardDescription>

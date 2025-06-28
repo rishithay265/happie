@@ -5,9 +5,9 @@ import { Toaster } from "react-hot-toast";
 import { SessionProviderWrapper } from "@/components/providers/session-provider";
 import Project from "@/components/root/Project";
 export const metadata: Metadata = {
-  title: "Fundit",
+  title: "Happie",
   description:
-    "A platform for student founders to connect with investors and bring their ideas to life",
+    "A platform for student wellness, connecting students with helpful resources and supportive investors",
 };
 
 export default function RootLayout({
